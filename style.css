@@ -11,11 +11,11 @@ body {
 
 .search-bar {
     width: 700px;
-    background: blanchedalmond;
+    background: rgba(225, 225, 225, 0.2);
     display: flex;
     align-items: center;
     border-radius: 60px;
-    padding: 10px 20px;
+    padding: 5px 20px;
 }
 
 .search-bar input {
@@ -24,11 +24,11 @@ body {
     border: 0;
     outline: none;
     font-size: 20px;
-    padding: 24px 20px;
+    padding: 20px 20px;
 }
 
 ::placeholder {
-    color: aqua;
+    color: grey;
 }
 
 .search-bar button {
@@ -36,5 +36,6 @@ body {
     height: 60px;
     border: 0;
     border-radius: 50%;
+    background-color: transparent;
     cursor: pointer;
 }

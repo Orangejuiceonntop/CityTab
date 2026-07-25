@@ -1,3 +1,4 @@
+//search bar
 const input = document.getElementById('input');
 
 input.addEventListener("keypress", (event) => {
