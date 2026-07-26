@@ -1,23 +1,21 @@
 body {
   background-image: url('https://i.pinimg.com/originals/bc/87/e5/bc87e5124f8d2cfe810d403adc96ad01.gif');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
-.search {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
 
 .search-bar {
     width: 700px;
     background: rgba(100, 99, 99, 0.845);
     display: flex;
     align-items: center;
+    position: absolute;
     border-radius: 60px;
     padding: 5px 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 300px
 }
 
 .search-bar input {
