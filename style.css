@@ -62,7 +62,8 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 100px;
-    color: rgb(185, 140, 43);
+    color: gray;
+    text-shadow: 2px 2px 2px #000000;
     top: 150px;
     transform: scaleY(1.5);
 }
