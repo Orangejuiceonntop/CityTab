@@ -7,7 +7,7 @@ body {
 
 .search-bar {
     width: 700px;
-    background: rgba(100, 99, 99, 0.845);
+    background: rgba(205, 205, 205, 0.845);
     display: flex;
     align-items: center;
     position: absolute;
@@ -59,4 +59,10 @@ body {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+    color: grey;
+    top: 150px;
 }
