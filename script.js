@@ -18,6 +18,10 @@ function displayTime(){
         hours = hours - 12
     }
 
+    if(hours = 12) {
+        hours = 12
+    }
+
     document.getElementById('hours').innerHTML = hours;
     document.getElementById('minutes').innerHTML = minutes;
 }
