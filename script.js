@@ -18,7 +18,7 @@ function displayTime(){
         hours = hours - 12
     }
 
-    if(hours = 12) {
+    if(hours == 0) {
         hours = 12
     }
 
