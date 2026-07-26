@@ -1,6 +1,7 @@
 body {
   background-image: url('https://i.pinimg.com/originals/bc/87/e5/bc87e5124f8d2cfe810d403adc96ad01.gif');
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .search {
@@ -12,7 +13,7 @@ body {
 
 .search-bar {
     width: 700px;
-    background: rgba(225, 225, 225, 0.2);
+    background: rgba(100, 99, 99, 0.845);
     display: flex;
     align-items: center;
     border-radius: 60px;
@@ -33,10 +34,25 @@ body {
 }
 
 .search-bar button {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border: 0;
     border-radius: 50%;
     background-color: transparent;
     cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: aliceblue;
+}
+
+.bookmarks {
+    display: flex;
+    width: 320px;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 395px;
 }
