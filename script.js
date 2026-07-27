@@ -8,7 +8,7 @@ input.addEventListener("keypress", (event) => {
     }
 });
 
-// Clock
+//clock-time
 function displayTime(){
     var dateTime = new Date();
     var hours = dateTime.getHours();
