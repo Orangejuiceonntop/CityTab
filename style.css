@@ -76,5 +76,31 @@ body {
     width: 100%;
     height: 33px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: rgba(209, 207, 207, 0.374);
 }
+
+.carousel {
+    display: flex;
+    justify-content: end;
+    margin-right: 10px;
+    width: 45%;
+    height: 70%;
+    border: #000000 2px solid;
+    overflow-x: auto;
+}
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+.group {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    animation: spin 10s infinite linear;
+}
+@keyframes spin {
+    from {translate: 100%;}
+    to {translate: -170%;}
+}
+
