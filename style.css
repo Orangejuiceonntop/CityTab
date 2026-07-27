@@ -97,7 +97,7 @@ body {
     display: flex;
     align-items: center;
     gap: 1em;
-    animation: spin 10s infinite linear;
+    animation: spin 12s infinite linear;
 }
 @keyframes spin {
     from {translate: 100%;}
