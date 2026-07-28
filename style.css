@@ -57,7 +57,7 @@ body {
 
 .clock {
     position: absolute;
-    left: 38%;
+    left: 39%;
     transform: translateX(-50%);
     font-family: "Black Ops One", system-ui;
     font-weight: 400;
