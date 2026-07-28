@@ -39,6 +39,7 @@ function getWeather() {
 
 
     location.innerHTML = "Locating...";
+    temperature.innerHTML = "Locating..."
 
     navigator.geolocation.getCurrentPosition(success, error);
 
@@ -46,11 +47,11 @@ function getWeather() {
         const latitude = position.coords.latitude;
         const longitude = position.coords.longitude;
 
-          fetch(`https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m,weather_code&timezone=auto`)
+          fetch(`https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m&temperature_unit=fahrenheit`)
                     .then(response => response.json())
                     .then(data => {
                         const temp = data.current.temperature_2m;
-                        temperature.innerHTML = temp
+                        temperature.innerHTML = temp + '° F'
                     });
         
     }
