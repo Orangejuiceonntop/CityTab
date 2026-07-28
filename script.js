@@ -30,3 +30,34 @@ function displayTime(){
     document.getElementById('minutes').innerHTML = minutes;
 }
 setInterval(displayTime, 10);
+
+//weather
+function getWeather() {
+    let temperature = document.getElementById("temperature");
+    let description = document.getElementById("description");
+    let location = document.getElementById("location");
+
+
+    location.innerHTML = "Locating...";
+
+    navigator.geolocation.getCurrentPosition(success, error);
+
+    function success(position) {
+        const latitude = position.coords.latitude;
+        const longitude = position.coords.longitude;
+
+          fetch(`https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m,weather_code&timezone=auto`)
+                    .then(response => response.json())
+                    .then(data => {
+                        const temp = data.current.temperature_2m;
+                        temperature.innerHTML = temp
+                    });
+        
+    }
+
+    function error() {
+        location.innerHTML = "Unable to retrieve your location";
+    }
+
+}
+getWeather()
