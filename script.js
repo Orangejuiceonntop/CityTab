@@ -34,12 +34,11 @@ setInterval(displayTime, 10);
 //weather
 function getWeather() {
     let temperature = document.getElementById("temperature");
-    let description = document.getElementById("description");
     let location = document.getElementById("location");
 
 
     location.innerHTML = "Locating...";
-    temperature.innerHTML = "Locating..."
+    temperature.innerHTML = "Loading..."
 
     navigator.geolocation.getCurrentPosition(success, error);
 
@@ -53,11 +52,18 @@ function getWeather() {
                         const temp = data.current.temperature_2m;
                         temperature.innerHTML = temp + '° F'
                     });
+            
+            fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        location.innerHTML = data.city + ", " + data.countryCode;
+                    })
         
     }
 
     function error() {
-        location.innerHTML = "Unable to retrieve your location";
+        location.innerHTML = "Couldn't get your location :(";
+        temperature.innerHTML = "";
     }
 
 }
