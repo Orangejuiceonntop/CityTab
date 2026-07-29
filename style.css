@@ -105,6 +105,13 @@ body {
     to {translate: -130%;}
 }
 
+.name {
+    margin-left: 10px;
+    border: #000000 solid 2px;
+    padding: 2.4px 5px;
+    font-family: "Doto", sans-serif;
+}
+
 .weather {
     background: rgba(0, 0, 0, 0.443);
     width: 300px;
