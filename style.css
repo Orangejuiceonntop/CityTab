@@ -74,7 +74,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 33px;
+    height: 38px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -86,7 +86,7 @@ body {
     justify-content: end;
     margin-right: 10px;
     width: 45%;
-    height: 70%;
+    height: 62%;
     border: #000000 2px solid;
     overflow-x: auto;
 }
@@ -110,6 +110,13 @@ body {
     border: #000000 solid 2px;
     padding: 2.4px 5px;
     font-family: "Doto", sans-serif;
+}
+
+.settings {
+    height: 20px;
+    cursor: pointer;
+    padding: 2px;
+    border: #000000 2px solid;
 }
 
 .weather {
