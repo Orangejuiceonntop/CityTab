@@ -127,3 +127,15 @@ body {
     padding: 10px;
 }
 
+.weather h1{
+    font-size: 40px;
+}
+
+.weather h2 {
+    font-size: 18px;
+}
+
+.weather p {
+    font-size: 15px;
+    margin-top: 12px;
+}
