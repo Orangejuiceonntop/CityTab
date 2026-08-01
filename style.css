@@ -152,4 +152,18 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border: #ffffff solid 1px;
+    border-radius: 15px;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.917);
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+}
+
+#settingsClose:hover {
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    background-color: #262525;
 }
