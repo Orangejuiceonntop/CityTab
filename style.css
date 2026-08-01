@@ -112,7 +112,7 @@ body {
     font-family: "Doto", sans-serif;
 }
 
-.settings {
+.settingsbutton {
     height: 20px;
     cursor: pointer;
     padding: 2px;
@@ -145,4 +145,11 @@ body {
 .weather p {
     font-size: 15px;
     margin-top: 12px;
+}
+
+.settings {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

@@ -68,3 +68,16 @@ function getWeather() {
 
 }
 getWeather()
+
+//Settings Screen
+let settings = document.getElementById("settings")
+let settingsOpen = document.getElementById("settingsOpen")
+let settingsClose = document.getElementById("settingsClose")
+
+settingsOpen.addEventListener("click", event => {
+    settings.style.display = "block"
+})
+
+settingsClose.addEventListener("click", event => {
+    settings.style.display = "none"
+})
