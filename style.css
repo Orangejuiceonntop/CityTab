@@ -148,9 +148,12 @@ body {
 }
 
 .calendar-container {
-    width: 330px;
+    position: absolute;
+    top: 370px;
+    left: 1095px;
+    width: 320px;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.443);
+    background: rgba(0, 0, 0, 0.65);
     color: aliceblue;
     border: #ffffff solid 1px;
     border-radius: 15px;
@@ -191,7 +194,7 @@ header .icons span:hover {
 }
 
 .calendar .days li {
-    margin-top: 10px;
+    margin-top: 14px;
     cursor: pointer;
     z-index: 1;
 }
@@ -202,7 +205,7 @@ header .icons span:hover {
 }
 
 .days li.inactive {
-    color: grey;
+    color: rgb(176, 176, 176);
 }
 
 .days li.active {
@@ -226,16 +229,8 @@ header .icons span:hover {
 }
 
 .days li.active::before {
-    background: paleturquoise
+    background: rgb(59, 76, 76);
 }
-
-
-
-
-
-
-
-
 
 .settings {
     position: absolute;
