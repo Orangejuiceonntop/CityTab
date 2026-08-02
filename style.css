@@ -147,6 +147,96 @@ body {
     margin-top: 12px;
 }
 
+.calendar-container {
+    width: 330px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.443);
+    color: aliceblue;
+    border: #ffffff solid 1px;
+    border-radius: 15px;
+}
+
+.calendar-container header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+header .current-date {
+    font-size: 17px;
+}
+
+header .icons span {
+    height: 38px;
+    width: 38px;
+    margin: 0 1px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+    user-select: none;
+}
+
+header .icons span:hover {
+    background-color: rgb(61, 54, 55);
+}
+
+.calendar ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.calendar .days li {
+    margin-top: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.calendar ul li {
+    position: relative;
+    width: calc(100% / 7);
+}
+
+.days li.inactive {
+    color: grey;
+}
+
+.days li.active {
+    color: aliceblue;
+}
+
+.calendar .days li::before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.days li:hover::before {
+    background-color: rgb(61, 54, 55); 
+}
+
+.days li.active::before {
+    background: paleturquoise
+}
+
+
+
+
+
+
+
+
+
 .settings {
     position: absolute;
     top: 50%;
