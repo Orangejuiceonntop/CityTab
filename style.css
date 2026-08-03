@@ -55,6 +55,13 @@ body {
     top: 398px;
 }
 
+.bookmarks img {
+    border: transparent solid 2px;
+}
+.bookmarks img:hover {
+    border: pink solid 2px;
+}
+
 .clock {
     position: absolute;
     left: 39%;
