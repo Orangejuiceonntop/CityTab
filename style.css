@@ -59,7 +59,7 @@ body {
     border: transparent solid 2px;
 }
 .bookmarks img:hover {
-    border: pink solid 2px;
+    border: #ff6ec7 solid 2px;
 }
 
 .clock {
@@ -143,6 +143,10 @@ body {
     padding: 10px;
 }
 
+.weather:hover {
+    border: #ff6ec7 solid 1px;
+}
+
 .weather h1{
     font-size: 40px;
 }
@@ -166,6 +170,10 @@ body {
     color: aliceblue;
     border: #ffffff solid 1px;
     border-radius: 15px;
+}
+
+.calendar-container:hover {
+    border: #00f0ff solid 1px;
 }
 
 .calendar-container header {
