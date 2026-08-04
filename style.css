@@ -85,7 +85,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(209, 207, 207, 0.374);
+    background-color: rgb(0, 0, 0);
+    color: antiquewhite;
+    border-bottom: #302f2f solid 1px;
 }
 
 .carousel {
@@ -94,7 +96,7 @@ body {
     margin-right: 10px;
     width: 45%;
     height: 62%;
-    border: #000000 2px solid;
+    border: #757575 2px solid;
     overflow-x: auto;
 }
 .carousel::-webkit-scrollbar {
@@ -114,7 +116,7 @@ body {
 
 .name {
     margin-left: 10px;
-    border: #000000 solid 2px;
+    border: #757575 solid 2px;
     padding: 2.4px 5px;
     font-family: "Doto", sans-serif;
 }
@@ -123,7 +125,7 @@ body {
     height: 20px;
     cursor: pointer;
     padding: 2px;
-    border: #000000 2px solid;
+    border: #757575 2px solid;
 }
 
 .weather {
