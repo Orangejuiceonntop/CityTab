@@ -134,6 +134,7 @@ prevNext.forEach(icon => {
 })
 
 //settings toggles/screen
+///Name display
 const nameInput = document.getElementById("nameInput");
 const nameDisplay = document.getElementById("nameDisplay");
 
@@ -150,3 +151,4 @@ function display() {
     nameDisplay.innerHTML = "Hello, " + localStorage.getItem("value")
 }
 
+///buttons
