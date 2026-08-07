@@ -134,12 +134,19 @@ prevNext.forEach(icon => {
 })
 
 //settings toggles/screen
-const nameInput = document.getElementById("nameInput")
-const nameDisplay = document.getElementById("nameDisplay")
+const nameInput = document.getElementById("nameInput");
+const nameDisplay = document.getElementById("nameDisplay");
 
 nameInput.addEventListener("keyup", display);
 
+nameDisplay.innerHTML = "Hello, " + localStorage.getItem("value");
+
+if (localStorage.getItem("value") === null) {
+    nameDisplay.innerHTML = "Hello, _____"
+}
+
 function display() {
-    nameDisplay.innerHTML = "Hello, " + nameInput.value
+    localStorage.setItem('value', nameInput.value);
+    nameDisplay.innerHTML = "Hello, " + localStorage.getItem("value")
 }
 
