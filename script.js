@@ -137,8 +137,9 @@ prevNext.forEach(icon => {
 const nameInput = document.getElementById("nameInput")
 const nameDisplay = document.getElementById("nameDisplay")
 
-nameInput.addEventListener("keypress", (event) => {
-    if (event.key == "Enter") {
-       nameDisplay.innerHTML = "Hello, " + nameInput.value 
-    }
-});
+nameInput.addEventListener("keyup", display);
+
+function display() {
+    nameDisplay.innerHTML = "Hello, " + nameInput.value
+}
+
