@@ -132,3 +132,13 @@ prevNext.forEach(icon => {
         renderCalendar();
     })
 })
+
+//settings toggles/screen
+const nameInput = document.getElementById("nameInput")
+const nameDisplay = document.getElementById("nameDisplay")
+
+nameInput.addEventListener("keypress", (event) => {
+    if (event.key == "Enter") {
+       nameDisplay.innerHTML = "Hello, " + nameInput.value 
+    }
+});
