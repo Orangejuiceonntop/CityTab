@@ -293,6 +293,7 @@ header .icons span:hover {
     display: flex;
     height: 40px;
     justify-content: center;
+    user-select: none;
 }
 
 

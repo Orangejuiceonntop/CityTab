@@ -152,3 +152,42 @@ function display() {
 }
 
 ///buttons
+
+
+//music player
+const musicContainer = document.querySelector(".music-container")
+const musicImg = musicContainer.querySelector(".img-area img")
+const musicName = musicContainer.querySelector(".info .nameMp")
+const musicArtist = musicContainer.querySelector(".info .artistMp")
+const mainAudio = musicContainer.querySelector("#main-audio")
+const playPause = musicContainer.querySelector(".play-pause")
+
+let musicIndex = 1;
+
+window.addEventListener("load", ()=>{
+    loadMusic(musicIndex);
+})
+
+function loadMusic(indexNumb){
+    musicName.innerText = allMusic[indexNumb - 1].name;
+    musicArtist.innerText = allMusic[indexNumb - 1].artist;
+    musicImg.src = `images/${allMusic[indexNumb -1].img}.jpg`;
+    mainAudio.src = `songs/${allMusic[indexNumb - 1].src}.mp3`;
+}
+
+function playMusic(){
+    musicContainer.classList.add("paused");
+    playPause.querySelector("i").innerText = "pause";
+    mainAudio.play();
+}
+
+function pauseMusic(){
+    musicContainer.classList.remove("paused");
+    playPause.querySelector("i").innerText = "play_arrow";
+    mainAudio.paused();
+}
+
+playPause.addEventListener("click", ()=>{
+    const isMusicPaused = musicContainer.classList.contains("paused");
+    isMusicPaused ? pauseMusic() : playMusic();
+})
